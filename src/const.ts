@@ -22,5 +22,11 @@ export const headerMenu = [
 ];
 
 export enum DataURLs {
-  WEATHER = 'https://pogoda.ngs.ru/'
+  WEATHER = 'https://pogoda.ngs.ru/',
+  CURRENCY = 'http://www.finmarket.ru/'
+}
+
+export enum CurrencyQuery {
+  USD = '/currency/USD/',
+  EURO = '/currency/EUR/',
 }
