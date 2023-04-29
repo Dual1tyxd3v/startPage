@@ -23,7 +23,8 @@ export const headerMenu = [
 
 export enum DataURLs {
   WEATHER = 'https://pogoda.ngs.ru/',
-  CURRENCY = 'http://www.finmarket.ru/'
+  CURRENCY = 'http://www.finmarket.ru/',
+  NOOBCLUB = 'https://www.noob-club.ru/'
 }
 
 export enum CurrencyQuery {

@@ -38,6 +38,9 @@ body {
   padding-top: 20px;
   color: #fff;
 }
+.hide {
+  transform: scaleY(0);
+}
 /* MAIN */
 .main {
   width: 1200px;
@@ -147,3 +150,26 @@ body {
   color: green;
 }
 /* END CURRENCY */
+
+/* TAB */
+.tab {
+}
+.tab__header {
+  background-image: linear-gradient(to bottom,#f0ad4e 0,#eb9316 100%);
+  cursor: pointer;
+  color: #000;
+}
+.tab__header--new {
+  background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+}
+.tab__title {
+  padding: 5px 0;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+.tab__content {
+  transition: 0.3s all;
+  transform-origin: top;
+}
+/* END TAB */
