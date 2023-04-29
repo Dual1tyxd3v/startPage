@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif  ;
+}
+
+ul{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+body {
+  background-color: #060714;
+  padding-top: 20px;
+  color: #fff;
+}
+/* MAIN */
+.main {
+  width: 1200px;
+  border: 2px solid #48494a;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+/* END MAIN */
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.header__item {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-size: 30px;
+  background-position: center;
+  transition: 0.2s all;
+}
+.header__item:hover {
+  background-size: 35px;
+}
+.header__item--goblin {
+  background-image: url(../img/goblin.png);
+}
+.header__item--zagonka {
+  background-image: url(../img/zagonka.png);
+}
+.header__item--igromania {
+  background-image: url(../img/igromania.svg);
+}
+.header__item--vk {
+  background-image: url(../img/vk.svg);
+}
+/* END HEADER */

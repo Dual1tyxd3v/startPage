@@ -2,6 +2,7 @@
   "name": "project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
     "axios": "^0.27.2",
@@ -31,7 +32,7 @@
     ],
     "parserOptions": {
       "project": [
-        "tsconfig.json"
+        "**/tsconfig.json"
       ]
     },
     "overrides": [
