@@ -49,11 +49,14 @@ body {
 
 /* HEADER */
 .header {
-  display: flex;
-  justify-content: space-around;
   background-color: #000;
   padding-top: 5px;
   padding-bottom: 5px;
+  border-bottom: 2px solid #48494a;
+}
+.header__list {
+  display: flex;
+  justify-content: space-around;
 }
 .header__item {
   display: block;
@@ -79,3 +82,41 @@ body {
   background-image: url(../img/vk.svg);
 }
 /* END HEADER */
+
+/* INFO */
+.info {
+  display: flex;
+}
+/* END INFO */
+
+/* WEATHER */
+.weather {
+  width: 300px;
+  height: 150px;
+  background-color: rgb(66, 136, 192);
+  padding: 10px;
+}
+.weather__main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.weather__temperature {
+  color: #000;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60px;
+}
+.weather__additional {
+  display: flex;
+  justify-content: space-around;
+}
+.weather__title {
+  margin-bottom: 10px;
+}
+.weather__data {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+/* END WEATHER */

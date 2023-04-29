@@ -20,3 +20,7 @@ export const headerMenu = [
     src: 'https://www.igromania.ru/'
   }
 ];
+
+export enum DataURLs {
+  WEATHER = 'https://pogoda.ngs.ru/'
+}
