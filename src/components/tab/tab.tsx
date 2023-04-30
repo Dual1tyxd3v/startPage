@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import NoobClub from '../noobclub/noobclub';
-import YaMusic from '../yamusic/yamusic';
+import Additional from '../additional/additional';
+import { DataURLs } from '../../const';
 
 type TabProps = {
   content: string;
 }
 
-function Tab({content}: TabProps): JSX.Element {
+function Tab({ content }: TabProps): JSX.Element {
   const [showTab, setShowTab] = useState(false);
   const [counter, setCounter] = useState('');
   const [headStatus, setHeadStatus] = useState('');
@@ -34,12 +35,18 @@ function Tab({content}: TabProps): JSX.Element {
 
   let element: null | JSX.Element = null;
 
-  switch(content) {
+  switch (content) {
     case 'NoobClub':
       element = <NoobClub setCount={setCount} isViewed={isViewed} />;
       break;
     case 'YaMusic':
-      element = <YaMusic />;
+      element = <Additional src={DataURLs.YAMUSIC} className='yamusic' />;
+      break;
+    case 'NapalmRecords':
+      element = <Additional src={DataURLs.NAPALM} className='clips' />;
+      break;
+    case 'NuclearBlast':
+      element = <Additional src={DataURLs.NUCLEAR} className='clips' />;
       break;
     default:
       element = null;

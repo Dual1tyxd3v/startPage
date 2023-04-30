@@ -11,6 +11,8 @@ function Main(): JSX.Element {
       <Tab content='NoobClub' />
       <Tab content='YaMusic' />
       <Search />
+      <Tab content='NapalmRecords' />
+      <Tab content='NuclearBlast' />
     </main>
   );
 }

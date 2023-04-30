@@ -35,7 +35,10 @@ export enum DataURLs {
   WEATHER = 'https://pogoda.ngs.ru/',
   CURRENCY = 'http://www.finmarket.ru/',
   NOOBCLUB = 'https://www.noob-club.ru/',
-  SEARCH = 'https://www.google.com/search?q='
+  SEARCH = 'https://www.google.com/search?q=',
+  NAPALM = 'https://www.youtube.com/c/napalmrecords/videos',
+  NUCLEAR = 'https://www.youtube.com/@NuclearBlastRecords/videos',
+  YAMUSIC = 'https://music.yandex.ru/iframe/#playlist/yamusic-daily/77863501'
 }
 
 export enum CurrencyQuery {
