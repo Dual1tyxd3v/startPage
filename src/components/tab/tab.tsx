@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import NoobClub from '../noobclub/noobclub';
+import YaMusic from '../yamusic/yamusic';
 
 type TabProps = {
   content: string;
@@ -36,6 +37,9 @@ function Tab({content}: TabProps): JSX.Element {
   switch(content) {
     case 'NoobClub':
       element = <NoobClub setCount={setCount} isViewed={isViewed} />;
+      break;
+    case 'YaMusic':
+      element = <YaMusic />;
       break;
     default:
       element = null;

@@ -153,6 +153,13 @@ body {
 /* END CURRENCY */
 
 /* TAB */
+.tab {
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.tab:last-child {
+  margin: 0;
+}
 .tab__header {
   background-image: linear-gradient(to bottom,#f0ad4e 0,#eb9316 100%);
   cursor: pointer;
@@ -198,3 +205,12 @@ body {
   border: none;
 }
 /* END NOOBCLUB */
+
+/* YAMUSIC */
+.yamusic {
+  display: block;
+  width: 900px;
+  height: 550px;
+  margin: 0 auto;
+}
+/* END YAMUSIC */

@@ -8,6 +8,7 @@ function Main(): JSX.Element {
       <Header />
       <Info />
       <Tab content='NoobClub' />
+      <Tab content='YaMusic' />
     </main>
   );
 }
