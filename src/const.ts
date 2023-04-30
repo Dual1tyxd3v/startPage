@@ -45,3 +45,5 @@ export enum CurrencyQuery {
   USD = '/currency/USD/',
   EURO = '/currency/EUR/',
 }
+
+export const MIN_EVENT_NAME_LENGTH = 3;

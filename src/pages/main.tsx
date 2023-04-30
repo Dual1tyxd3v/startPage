@@ -1,3 +1,4 @@
+import Events from '../components/events/events';
 import Header from '../components/header/header';
 import Info from '../components/info/info';
 import Search from '../components/search/search';
@@ -13,6 +14,7 @@ function Main(): JSX.Element {
       <Search />
       <Tab content='NapalmRecords' />
       <Tab content='NuclearBlast' />
+      <Events />
     </main>
   );
 }

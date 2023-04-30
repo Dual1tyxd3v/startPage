@@ -17,3 +17,14 @@ export type PrevCurrency = {
   usd: string;
   euro: string;
 }
+
+export type EventType = {
+  title: string;
+  time: number;
+}
+
+export type EventFormType = {
+  title: string;
+  date: string;
+  time: string;
+}

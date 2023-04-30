@@ -155,10 +155,6 @@ body {
 /* TAB */
 .tab {
   margin-bottom: 5px;
-  overflow: hidden;
-}
-.tab:last-child {
-  margin: 0;
 }
 .tab__header {
   background-image: linear-gradient(to bottom,#f0ad4e 0,#eb9316 100%);
@@ -215,12 +211,6 @@ body {
   margin: 0 auto;
   position: relative;
 }
-.hide .yamusic,
-.hide .clips {
-  z-index: -1;
-  transition: scaleY(0);
-  transform-origin: top;
-}
 /* END YAMUSIC */
 
 /* SEARCH */
@@ -228,6 +218,7 @@ body {
   width: 100%;
   height: 60px;
   padding: 10px 20px;
+  margin-bottom: 5px;
 }
 .search__bar {
   width: 100%;
@@ -245,3 +236,110 @@ body {
   height: 550px;
 }
 /* END CLIPS*/
+
+/* EVENTS */
+.events__empty {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #c12e2a;
+  margin-bottom: 5px;
+}
+.events {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.events__description {
+  font-size: 12px;
+  color: grey;
+}
+/* END EVENTS */
+
+/* NEWEVENT */
+.newEvent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.newEvent__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 400px;
+  background-color: #f0ad4e;
+  border-radius: 20px;
+  border: 3px solid grey;
+  padding: 10px 15px;
+}
+.newEvent__close {
+  width: 25px;
+  height: 25px;
+  border: none;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  left: 435px;
+}
+.newEvent__close::after,
+.newEvent__close::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 2px;
+}
+.newEvent__close::after {
+  transform: rotate(45deg);
+}
+.newEvent__close::before {
+  transform: rotate(-45deg);
+}
+.newEvent__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.newEvent__label {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.newEvent__input {
+  height: 40px;
+  border-radius: 10px;
+  padding: 0 5px;
+}
+.newEvent__field:last-child {
+  margin-bottom: 30px;
+}
+.newEvent__submit {
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+  border: none;
+  background-color: #419641;
+  border-radius: 20px;
+  padding: 5px 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.newEvent__submit:disabled {
+  background-color: #c12e2a;
+}
+/* END NEWEVENT */
