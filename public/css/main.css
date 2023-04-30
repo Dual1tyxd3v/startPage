@@ -87,6 +87,12 @@ body {
 .header__item--vk {
   background-image: url(../img/vk.svg);
 }
+.header__item--whatsapp {
+  background-image: url(../img/whatsapp.svg);
+}
+.header__item--telegram {
+  background-image: url(../img/telegram.svg);
+}
 /* END HEADER */
 
 /* INFO */
@@ -185,6 +191,7 @@ body {
 .noobclub__item {
   border-bottom: 2px solid black;
   margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .noobclub__item:last-child {
   margin-bottom: 0;

@@ -18,6 +18,16 @@ export const headerMenu = [
     classPostfix: 'igromania',
     description: 'Igromania',
     src: 'https://www.igromania.ru/'
+  },
+  {
+    classPostfix: 'whatsapp',
+    description: 'WhatsApp',
+    src: 'https://web.whatsapp.com/'
+  },
+  {
+    classPostfix: 'telegram',
+    description: 'Telegram',
+    src: 'https://web.telegram.org/k/'
   }
 ];
 
