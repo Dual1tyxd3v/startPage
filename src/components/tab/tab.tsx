@@ -9,6 +9,8 @@ function Tab({content}: TabProps): JSX.Element {
   const [showTab, setShowTab] = useState(false);
   const [counter, setCounter] = useState('');
   const [headStatus, setHeadStatus] = useState('');
+  const [isViewed, setIsViewed] = useState(false);
+
   const tab = useRef(null);
 
   useEffect(() => {
@@ -21,6 +23,7 @@ function Tab({content}: TabProps): JSX.Element {
 
   function clickHandler() {
     setShowTab(!showTab);
+    setIsViewed(true);
   }
 
   const setCount = useCallback((count: string, status: string) => {
@@ -32,7 +35,7 @@ function Tab({content}: TabProps): JSX.Element {
 
   switch(content) {
     case 'NoobClub':
-      element = <NoobClub setCount={setCount} />;
+      element = <NoobClub setCount={setCount} isViewed={isViewed} />;
       break;
     default:
       element = null;

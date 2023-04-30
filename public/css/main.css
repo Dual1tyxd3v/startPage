@@ -17,11 +17,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 .visually-hidden {
   width: 1px;
   height: 1px;
@@ -152,8 +147,6 @@ body {
 /* END CURRENCY */
 
 /* TAB */
-.tab {
-}
 .tab__header {
   background-image: linear-gradient(to bottom,#f0ad4e 0,#eb9316 100%);
   cursor: pointer;
@@ -161,6 +154,9 @@ body {
 }
 .tab__header--new {
   background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+}
+.tab__header--error {
+  background-image: linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);
 }
 .tab__title {
   padding: 5px 0;
@@ -173,3 +169,25 @@ body {
   transform-origin: top;
 }
 /* END TAB */
+
+/* NOOBCLUB */
+.noobclub {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+}
+.noobclub__title {
+  font-size: 24px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.noobclub__item {
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+.noobclub__item:last-child {
+  margin-bottom: 0;
+  border: none;
+}
+/* END NOOBCLUB */
