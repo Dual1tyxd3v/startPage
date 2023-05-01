@@ -11,8 +11,6 @@ export type CurrencyDataType = {
   className: string;
 };
 
-export type CurrencyDataTypes = CurrencyDataType[];
-
 export type PrevCurrency = {
   usd: string;
   euro: string;
@@ -21,6 +19,8 @@ export type PrevCurrency = {
 export type EventType = {
   title: string;
   time: number;
+  description: string;
+  id: string;
 }
 
 export type EventFormType = {

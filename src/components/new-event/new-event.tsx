@@ -1,8 +1,8 @@
-/* eslint-disable no-console */
 import { ChangeEvent, FormEvent, useState } from 'react';
 import { MIN_EVENT_NAME_LENGTH } from '../../const';
-import { EventFormType, EventType } from '../../types/types';
-import { getMilliSeconds, getShortDate } from '../../utils/date';
+import { EventFormType } from '../../types/types';
+import { getShortDate } from '../../utils/date';
+import { addEvent } from '../../utils/events';
 
 type NewEventProps = {
   closeHandler: (value?: boolean, needUpdate?: boolean) => void;
@@ -27,23 +27,12 @@ function NewEvent({ closeHandler }: NewEventProps): JSX.Element {
   function formSubmit(evt: FormEvent) {
     evt.preventDefault();
 
-    const form = evt.target as HTMLFormElement;
-    const data = new FormData(form);
-
-    const eventsData = localStorage.getItem('events');
-    if (!eventsData) {
-      localStorage.setItem('events', JSON.stringify([{
-        title: data.get('title'),
-        time: getMilliSeconds(data.get('date') as string, data.get('time') as string)
-      }]));
-    } else {
-      const jsonEventsData = JSON.parse(eventsData) as EventType[];
-      jsonEventsData.push({
-        title: data.get('title') as string,
-        time: getMilliSeconds(data.get('date') as string, data.get('time') as string)
-      });
-      localStorage.setItem('events', JSON.stringify(jsonEventsData));
-    }
+    const data = new FormData(evt.target as HTMLFormElement);
+    const title = data.get('title') as string;
+    const date = data.get('date') as string;
+    const time = data.get('time') as string;
+    const readableDate = `${date.split('-').reverse().join('-')} ${time}`;
+    addEvent(title, readableDate, date, time);
     closeHandler(false, true);
   }
   return (

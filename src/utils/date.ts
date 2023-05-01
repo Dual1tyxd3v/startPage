@@ -5,8 +5,3 @@ export const getShortDate = (date: Date) => {
   return `${year}-${month}-${day}`;
 };
 
-export const getMilliSeconds = (date: string, time: string) => {
-  const timeInMs = (+time.split(':')[0] * 60 * 60 * 1000) + (+time.split(':')[1] * 60 * 1000);
-  const milliSeconds = new Date(date).getTime() + timeInMs;
-  return milliSeconds;
-};
