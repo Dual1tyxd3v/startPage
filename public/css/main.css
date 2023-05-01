@@ -203,16 +203,6 @@ body {
 }
 /* END NOOBCLUB */
 
-/* YAMUSIC */
-.yamusic {
-  display: block;
-  width: 900px;
-  height: 550px;
-  margin: 0 auto;
-  position: relative;
-}
-/* END YAMUSIC */
-
 /* SEARCH */
 .search {
   width: 100%;
@@ -230,12 +220,12 @@ body {
 }
 /* END SEARCH */
 
-/* CLIPS */
-.clips {
+/* IFRAME */
+.iframe {
   width: 100%;
   height: 550px;
 }
-/* END CLIPS*/
+/* END IFRAME*/
 
 /* EVENTS */
 .events__empty {

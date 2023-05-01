@@ -40,13 +40,13 @@ function Tab({ content }: TabProps): JSX.Element {
       element = <NoobClub setCount={setCount} isViewed={isViewed} />;
       break;
     case 'YaMusic':
-      element = <Additional src={DataURLs.YAMUSIC} className='yamusic' />;
+      element = <Additional src={DataURLs.YAMUSIC} title='yamusic' />;
       break;
     case 'NapalmRecords':
-      element = <Additional src={DataURLs.NAPALM} className='clips' />;
+      element = <Additional src={DataURLs.NAPALM} title='clips' />;
       break;
     case 'NuclearBlast':
-      element = <Additional src={DataURLs.NUCLEAR} className='clips' />;
+      element = <Additional src={DataURLs.NUCLEAR} title='clips' />;
       break;
     default:
       element = null;

@@ -1,11 +1,11 @@
 type AdditionalProps = {
   src: string;
-  className: string;
+  title: string;
 }
 
-function Additional({src, className}: AdditionalProps): JSX.Element {
+function Additional({src, title}: AdditionalProps): JSX.Element {
   return (
-    <iframe title={className} src={src} className={className}></iframe>
+    <iframe title={title} src={src} className='iframe'></iframe>
   );
 }
 
