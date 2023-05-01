@@ -25,7 +25,7 @@ function EventCard({update, card}: EventCardProps): JSX.Element {
   }, [counter, update]);
 
   function deleteHandler() {
-    deleteEvent(id);
+    id && deleteEvent(id);
     update();
   }
 
