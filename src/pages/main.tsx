@@ -10,7 +10,7 @@ function Main(): JSX.Element {
       <Header />
       <Info />
       <Tab content='NoobClub' />
-      <Tab content='YaMusic' />
+      <Tab content='Spotify' />
       <Search />
       <Tab content='NapalmRecords' />
       <Tab content='NuclearBlast' />

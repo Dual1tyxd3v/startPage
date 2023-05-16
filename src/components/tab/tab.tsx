@@ -39,8 +39,8 @@ function Tab({ content }: TabProps): JSX.Element {
     case 'NoobClub':
       element = <NoobClub setCount={setCount} isViewed={isViewed} />;
       break;
-    case 'YaMusic':
-      element = <Additional src={DataURLs.YAMUSIC} title='yamusic' />;
+    case 'Spotify':
+      element = <Additional src={DataURLs.SPOTIFY} title='spotify' />;
       break;
     case 'NapalmRecords':
       element = <Additional src={DataURLs.NAPALM} title='clips' />;

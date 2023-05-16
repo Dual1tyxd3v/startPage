@@ -5,7 +5,7 @@ type AdditionalProps = {
 
 function Additional({src, title}: AdditionalProps): JSX.Element {
   return (
-    <iframe title={title} src={src} className='iframe'></iframe>
+    <iframe allow="encrypted-media" title={title} src={src} className='iframe'></iframe>
   );
 }
 

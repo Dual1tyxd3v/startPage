@@ -38,7 +38,7 @@ export enum DataURLs {
   SEARCH = 'https://www.google.com/search?q=',
   NAPALM = 'https://www.youtube.com/c/napalmrecords/videos',
   NUCLEAR = 'https://www.youtube.com/@NuclearBlastRecords/videos',
-  YAMUSIC = 'https://music.yandex.ru/iframe/#playlist/yamusic-daily/77863501'
+  SPOTIFY = 'https://open.spotify.com/embed/playlist/30a3BmF0CtcUU0mxpv2zpD?utm_source=generator'
 }
 
 export enum CurrencyQuery {
