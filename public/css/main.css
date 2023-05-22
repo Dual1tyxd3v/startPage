@@ -180,12 +180,15 @@ body {
 }
 /* END TAB */
 
-/* NOOBCLUB */
-.noobclub {
+/* LOADED TAB */
+.loaded-tab {
   background-color: #fff;
   color: #000;
   padding: 10px;
 }
+/* END LOADED TAB */
+
+/* NOOBCLUB */
 .noobclub__title {
   font-size: 24px;
   text-align: center;

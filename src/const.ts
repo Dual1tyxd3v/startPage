@@ -1,3 +1,5 @@
+import { loadNoobClub } from './utils/noobClubParser';
+
 export const headerMenu = [
   {
     classPostfix: 'goblin',
@@ -40,6 +42,12 @@ export enum DataURLs {
   NUCLEAR = 'https://www.youtube.com/@NuclearBlastRecords/videos',
   SPOTIFY = 'https://open.spotify.com/embed/playlist/30a3BmF0CtcUU0mxpv2zpD?utm_source=generator'
 }
+
+export const NOOB_CLUB = {
+  url: 'https://www.noob-club.ru/',
+  parser: loadNoobClub,
+  localStorageName: 'nclub'
+};
 
 export enum CurrencyQuery {
   USD = '/currency/USD/',

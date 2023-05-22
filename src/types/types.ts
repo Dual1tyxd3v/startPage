@@ -28,3 +28,16 @@ export type EventFormType = {
   date: string;
   time: string;
 }
+
+type ParserResult = {
+  counter: string;
+  container: HTMLDivElement;
+  headers: string;
+}
+
+export type ContentObject = {
+  url: string;
+  parser: (data: string) => null | ParserResult;
+  localStorageName: string;
+}
+

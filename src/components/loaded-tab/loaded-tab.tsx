@@ -1,16 +1,17 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { DataURLs } from '../../const';
-import { loadNoobClub } from '../../utils/noobClubParser';
+import { ContentObject } from '../../types/types';
 
-type NoobClubProps = {
+type LoadedTabProps = {
   setCount: (value: string, status: string) => void;
   isViewed: boolean;
+  contentObject: ContentObject;
 }
 
-function NoobClub({ setCount, isViewed }: NoobClubProps): JSX.Element {
+function LoadedTab({ setCount, isViewed, contentObject }: LoadedTabProps): JSX.Element {
   const [content, setContent] = useState<null | HTMLDivElement>(null);
   const container = useRef(null);
   const [headers, setHeaders] = useState<null | string>(null);
+  const { url, parser, localStorageName } = contentObject;
 
   useEffect(() => {
     if (!container.current) {
@@ -21,7 +22,7 @@ function NoobClub({ setCount, isViewed }: NoobClubProps): JSX.Element {
   }, [content]);
 
   useLayoutEffect(() => {
-    fetch(DataURLs.NOOBCLUB)
+    fetch(url)
       .then((res) => {
         if (res.ok) {
           return res.text();
@@ -29,20 +30,20 @@ function NoobClub({ setCount, isViewed }: NoobClubProps): JSX.Element {
         setCount('', 'tab__header--error');
       })
       .then((res) => {
-        const result = loadNoobClub(res as string);
+        const result = parser(res as string);
         setContent(result ? result.container : result);
         result && setHeaders(result.headers);
         result && setCount(result.counter, 'tab__header--new');
       })
       .catch((err: Error) => setCount('', 'tab__header--error'));
-  }, [setCount]);
+  }, [setCount, parser, url]);
 
-  (isViewed && headers) && localStorage.setItem('nclub', headers);
+  (isViewed && headers) && localStorage.setItem(localStorageName, headers);
 
   return (
-    <div ref={container} className='noobclub'>
+    <div ref={container} className='loaded-tab'>
     </div>
   );
 }
 
-export default NoobClub;
+export default LoadedTab;
