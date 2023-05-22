@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Additional from '../additional/additional';
-import { DataURLs, NOOB_CLUB } from '../../const';
+import { DataURLs, FREE_STEAM, NOOB_CLUB } from '../../const';
 import LoadedTab from '../loaded-tab/loaded-tab';
 
 type TabProps = {
@@ -40,7 +40,7 @@ function Tab({ content }: TabProps): JSX.Element {
       element = <LoadedTab contentObject={NOOB_CLUB} setCount={setCount} isViewed={isViewed} />;
       break;
     case 'FreeSteam':
-      element = <LoadedTab contentObject={NOOB_CLUB} setCount={setCount} isViewed={isViewed} />;
+      element = <LoadedTab contentObject={FREE_STEAM} setCount={setCount} isViewed={isViewed} />;
       break;
     case 'Spotify':
       element = <Additional src={DataURLs.SPOTIFY} title='spotify' />;

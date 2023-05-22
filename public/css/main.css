@@ -206,6 +206,34 @@ body {
 }
 /* END NOOBCLUB */
 
+/* FREE_STEAM */
+.freesteam {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.freesteam__card,
+.freesteam__img {
+  width: 330px;
+}
+.freesteam__mark {
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.freesteam__mark--gog {
+  background-color: #78387b;
+}
+.freesteam__mark--steam {
+  background-color: grey;
+}
+.freesteam__mark--epicgames {
+  background-color: red;
+}
+/* END FREE_STEAM */
+
 /* SEARCH */
 .search {
   width: 100%;

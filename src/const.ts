@@ -1,3 +1,4 @@
+import { loadFreeSteam } from './utils/freesteamParser';
 import { loadNoobClub } from './utils/noobClubParser';
 
 export const headerMenu = [
@@ -47,6 +48,12 @@ export const NOOB_CLUB = {
   url: 'https://www.noob-club.ru/',
   parser: loadNoobClub,
   localStorageName: 'nclub'
+};
+
+export const FREE_STEAM = {
+  url: 'https://freesteam.ru/',
+  parser: loadFreeSteam,
+  localStorageName: 'freeSteam'
 };
 
 export enum CurrencyQuery {
