@@ -43,5 +43,15 @@ export const asideItems = [
     name: 'Favicon',
     url: 'https://realfavicongenerator.net/',
     imgSrc: './img/aside__icon--favicon.png',
+  },
+  {
+    name: 'Github',
+    url: 'https://github.com/Dual1tyxd3v/',
+    imgSrc: './img/aside__icon--github.png',
+  },
+  {
+    name: 'HTML codes',
+    url: 'https://css-tricks.com/snippets/html/glyphs/',
+    imgSrc: './img/aside__icon--codes.png',
   }
 ];
