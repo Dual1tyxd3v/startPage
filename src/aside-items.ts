@@ -53,5 +53,10 @@ export const asideItems = [
     name: 'HTML codes',
     url: 'https://css-tricks.com/snippets/html/glyphs/',
     imgSrc: './img/aside__icon--codes.png',
+  },
+  {
+    name: 'Sprites',
+    url: 'https://icomoon.io/app/#/select/',
+    imgSrc: './img/aside__icon--sprites.png',
   }
 ];
